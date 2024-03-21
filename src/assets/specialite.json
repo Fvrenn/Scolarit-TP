@@ -1,0 +1,31 @@
+[
+    {
+      "specialite": "DEV APP",
+      "id": 1
+    },
+    {
+      "specialite": "ING RESEAUX",
+      "id": 2
+    },
+    {
+      "specialite": "INTEGRATEUR",
+      "id": 3
+    },
+    {
+      "specialite": "CHEF DE PROJET",
+      "id": 4
+    },
+    {
+      "specialite": "INFOGRAPHISTE",
+      "id": 5
+    },
+    {
+      "specialite": "UX DESIGNER",
+      "id": 6
+    },
+    {
+      "specialite": "DEVELOPPEUR MOBILE",
+      "id": 7
+    }
+  ]
+  

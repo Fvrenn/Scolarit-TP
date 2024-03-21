@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    padding: 20px 0px;
+}
+.logo a {
+  font-family: "Days One", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #334456;
+}
+.logo a span {
+  background-color: #334456;
+  border-radius: 7px;
+  padding: 8px 12px;
+  color: white;
+}
+
+.link a {
+    font-family: "Inter", sans-serif;
+    color: #334456;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+table {
+  font-family: "Inter", sans-serif;
+  border-spacing: 20px 5px;
+  border-collapse: separate;
+  background-color: #fcfaf0;
+  /* width: 80%; */
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+table th {
+  font-family: "Days One", sans-serif;
+  text-align: left;
+}
+
+.info {
+  background-color: #fcfaf0;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border: none;
+}
+
+tr:nth-child(even) {
+  background-color: #fff7e0;
+}
+
+img {
+  height: 400px;
+}
+
+.container {
+  text-align: center;
+}

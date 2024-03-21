@@ -1,0 +1,24 @@
+<div>
+  <h3>Recherche de spécialité</h3>
+  <div>
+    <input type="text" [(ngModel)]="searchValue" placeholder="Rechercher">
+    <button class="Rechercher" (click)="searchSpecialite()">Rechercher</button>
+    <button class="reinitialiser" (click)="resetSearch()">Réinitialiser</button>
+  </div>
+  <div *ngIf="searchResult">
+    <h3>Résultat de la recherche :</h3>
+    <table>
+      <tr>
+        <th>Nom</th>
+        <th>ID</th>
+      </tr>
+      <tr>
+        <td>{{ searchResult._libelle }}</td>
+        <td>{{ searchResult._idSpec }}</td>
+      </tr>
+    </table>
+  </div>
+  <div *ngIf="!searchResult && searchValue">
+    <p>Aucune spécialité trouvée pour la recherche "{{ searchValue }}"</p>
+  </div>
+</div>

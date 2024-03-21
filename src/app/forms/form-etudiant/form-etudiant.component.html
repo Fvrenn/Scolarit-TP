@@ -1,0 +1,35 @@
+<div>
+  <h3>Rechercher un étudiant par nom ou ID :</h3>
+  <input type="text" [(ngModel)]="searchValue" placeholder="Rechercher">
+  <button class="Rechercher" (click)="searchEtudiant()">Rechercher</button>
+  <button class="reinitialiser" (click)="resetSearch()">Réinitialiser</button>
+</div>
+
+<div *ngIf="searchResult">
+  <h3>Résultat de la recherche :</h3>
+  <table>
+    <tr>
+      <th>Nom</th>
+      <th>Prénom</th>
+      <th>Adresse</th>
+      <th>Email</th>
+      <th>Genre</th>
+      <th>Age</th>
+      <th>Numéro d'Étudiant</th>
+    </tr>
+    <tr>
+      <td>{{ searchResult._nom }}</td>
+      <td>{{ searchResult._prenoms }}</td>
+      <td>{{ searchResult._rue }}, {{ searchResult._cp }}, {{ searchResult._ville }}</td>
+      <td>{{ searchResult._courriel }}</td>
+      <td>{{ searchResult._genre }}</td>
+      <td>{{ searchResult._age }}</td>
+      <td>{{ searchResult._idCand }}</td>
+    </tr>
+  </table>
+</div>
+
+
+<div *ngIf="!searchResult && searchValue">
+  <p>Aucun etudiant trouvée pour la recherche "{{ searchValue }}"</p>
+</div>

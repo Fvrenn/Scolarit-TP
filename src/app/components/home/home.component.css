@@ -1,0 +1,12 @@
+.form {
+  display: flex;
+  gap: 20px;
+}
+
+.container div{
+  margin-bottom: 100px;
+}
+
+.recherceh{
+  margin-bottom: 100px;
+}

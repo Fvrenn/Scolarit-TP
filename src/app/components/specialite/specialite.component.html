@@ -1,0 +1,19 @@
+<div class="container">
+<img src="../../../assets/workspace.jpeg" alt="">
+<div class="div-table">
+  <table>
+    <thead>
+      <tr class="info">
+        <th>Specialite</th>
+        <th>ID</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let specialite of specialites">
+        <td>{{ specialite._libelle }}</td>
+        <td>{{ specialite._idSpec }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
